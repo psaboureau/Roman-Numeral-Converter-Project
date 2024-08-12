@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --gray-85: #1b1b32;
+  --border-max-width: 500px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray-85);
+  color: white;
+  font-family: "Teko", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+fieldset {
+  max-width: var(--border-max-width);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  border: 3px solid white;
+}
+
+.freecodecamp-logo {
+  height: 30px;
+  margin-top: 5em;
+}
+
+input {
+  display: block;
+  font-size: 2.5rem;
+  width: 80%;
+  height: 60px;
+  padding: 6px 12px;
+  line-height: 1.4;
+  color: white;
+  background-color: grey;
+  border: 1px solid white;
+}
+
+.output {
+  color: white;
+  background-color: grey;
+  border: 3px solid white;
+  font-size: 2.5rem;
+  width: 90%;
+  max-width: var(--border-max-width);
+  min-height: 55px;
+  margin-top: 25px;
+  padding: 15px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.alert {
+  background-color: red;
+}
